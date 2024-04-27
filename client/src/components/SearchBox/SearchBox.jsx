@@ -1,5 +1,4 @@
 import React from 'react'
-import { DownArrow } from '../../assets/icons'
 import { SelectValue, SelectTrigger, SelectItem, SelectContent, Select } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
