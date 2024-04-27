@@ -7,10 +7,10 @@ const HotelPage = ({ endpoint }) => {
     let { id } = useParams();
     const [hotelsData, setHotelsData] = useState([])
     const [hotelId, setHotelId] = useState(null)
-    const [isLoading, setIsLoading] = useState(true);
+    const [hotelDataLoaded, setHotelDataLoaded] = useState(false);
     const navigate = useNavigate();
-
     useEffect(() => {
+        setHotelDataLoaded(false);
         getHotelId()
         getAllHotels()
     }, [id])
@@ -28,7 +28,7 @@ const HotelPage = ({ endpoint }) => {
         try {
             const res = await axios.get(`${endpoint}/hotel/${id}`)
             setHotelId(res.data)
-            setIsLoading(false);
+            setHotelDataLoaded(true);
 
         } catch (error) {
             console.log(error)
@@ -41,39 +41,37 @@ const HotelPage = ({ endpoint }) => {
     const handleLinkClick = () => {
         window.scrollTo(0, 0);
     };
-    if (!isLoading && !hotelId) {
-        return <Navigate to="/" replace />;
-    }
+
     return (
         <>
-            {isLoading ? (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
-                    <div className="h-16 w-16 animate-spin rounded-full border-4 border-white border-t-transparent" />
-                </div>
-            ) : (
+            {hotelDataLoaded ? (
                 <>
                     <HotelPageView imgURLS={hotelId.photos} hotelName={hotelId.name} stars={hotelId.stars} reviews={hotelId.reviews} services={hotelId.services} location={hotelId.location} price={hotelId.price} description={hotelId.description} />
-                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-600">
-                        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" >
-                            {hotelsData.map((hotel, index) => (
-                                <div key={index}>
-                                    <Link to={`/hotel/${hotel.id}`} onClick={handleLinkClick} >
-                                        <HotelCard
-                                            id={hotel.id}
-                                            imgURL={hotel.photos[0]}
-                                            hotelName={hotel.name}
-                                            stars={hotel.stars}
-                                            description={hotel.description}
-                                            price={hotel.price}
-                                            key={hotel.id}
-                                        />
-                                    </Link>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                </>
+            ) : (
+                <>
+                    <div className="h-4 w-4 border-2 border-gray-300 rounded-full animate-spin" />
                 </>
             )}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-600">
+                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" >
+                    {hotelsData.map((hotel, index) => (
+                        <div key={index}>
+                            <Link to={`/hotel/${hotel.id}`} onClick={handleLinkClick} >
+                                <HotelCard
+                                    id={hotel.id}
+                                    imgURL={hotel.photos[0]}
+                                    hotelName={hotel.name}
+                                    stars={hotel.stars}
+                                    description={hotel.description}
+                                    price={hotel.price}
+                                    key={hotel.id}
+                                />
+                            </Link>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </>
     )
 }
