@@ -28,18 +28,20 @@ const HomePage = ({ endpoint }) => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <SearchBox />
                     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
                         {hotelsData.map((hotel, index) => (
-                            <Link to={`/hotel/${hotel.id}`} key={hotel.id} onClick={handleLinkClick}>
-                                <HotelCard
-                                    id={hotel.id}
-                                    imgURL={hotel.photos[0]}
-                                    hotelName={hotel.name}
-                                    stars={hotel.stars}
-                                    description={hotel.description}
-                                    price={hotel.price}
-                                    key={index}
-                                />
-                            </Link>
+                            <div key={index}>
+                                <Link to={`/hotel/${hotel.id}`} onClick={handleLinkClick}>
+                                    <HotelCard
+                                        id={hotel.id}
+                                        imgURL={hotel.photos[0]}
+                                        hotelName={hotel.name}
+                                        stars={hotel.stars}
+                                        description={hotel.description}
+                                        price={hotel.price}
+                                    />
+                                </Link>
+                            </div>
                         ))}
                     </div>
                 </div>

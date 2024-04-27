@@ -25,7 +25,7 @@ const FormSchema = z.object({
         required_error: "Selecciona una fecha",
     }),
     guests: z.string({
-        required_error: "Please select an option",
+        required_error: "Selecciona una opción",
     }),
 
 })
