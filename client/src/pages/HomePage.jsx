@@ -19,6 +19,9 @@ const HomePage = ({ endpoint }) => {
         }
 
     }
+    const handleLinkClick = () => {
+        window.scrollTo(0, 0); // Scroll hacia arriba
+    };
     return (
         <>
             <main className="bg-gray-100 py-8 sm:py-12 lg:py-16">
@@ -26,7 +29,7 @@ const HomePage = ({ endpoint }) => {
                     <SearchBox />
                     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         {hotelsData.map((hotel, index) => (
-                            <Link to={`/hotel/${hotel.id}`} key={hotel.id} target="_self">
+                            <Link to={`/hotel/${hotel.id}`} key={hotel.id} onClick={handleLinkClick}>
                                 <HotelCard
                                     id={hotel.id}
                                     imgURL={hotel.photos[0]}
