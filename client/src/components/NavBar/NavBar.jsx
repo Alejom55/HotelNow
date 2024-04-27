@@ -34,10 +34,10 @@ const NavBar = () => {
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end">
                         <DropdownMenuItem>
-                            <Link to="#">Iniciar sesión</Link>
+                            <Link to="/login">Iniciar sesión</Link>
                         </DropdownMenuItem>
                         <DropdownMenuItem>
-                            <Link to="#">Registrarse</Link>
+                            <Link to="/register">Registrarse</Link>
                         </DropdownMenuItem>
                     </DropdownMenuContent>
                 </DropdownMenu>
