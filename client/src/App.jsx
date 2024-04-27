@@ -11,32 +11,17 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-
 const endpoint = 'http://localhost:8000/api'
 function App() {
-  const [hotelsData, setHotelsData] = useState([])
 
-  useEffect(() => {
-    getAllHotels()
-  }, [])
-  const getAllHotels = async () => {
-    try {
-      const res = await axios.get(`${endpoint}/hotels`)
-      setHotelsData(res.data)
-
-    } catch (error) {
-      console.log(error)
-    }
-
-  }
   return (
     <>
       <div className="font-haken">
         <BrowserRouter>
           <NavBar />
           <Routes>
-            <Route path='/' element={<HomePage data={hotelsData} />} />
-            <Route path='/hotel/:id' element={<HotelPage data={hotelsData} endpoint={endpoint} />} />
+            <Route path='/' element={<HomePage endpoint={endpoint}/>} />
+            <Route path='/hotel/:id' element={<HotelPage endpoint={endpoint} />} />
             <Route path='/login' element={<LoginPage />} />
             <Route path='/register' element={<RegisterPage />} />
 

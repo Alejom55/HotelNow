@@ -14,11 +14,11 @@ export const HotelPageView = ({ imgURLS, hotelName, stars, reviews, services, lo
         Autoplay({ delay: 4500, stopOnInteraction: true })
     )
 
+
     useEffect(() => {
         if (!api) {
             return
         }
-
         setCount(api.scrollSnapList().length)
         setCurrent(api.selectedScrollSnap() + 1)
 

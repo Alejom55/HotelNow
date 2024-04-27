@@ -8,7 +8,7 @@
             "https://media.staticontent.com/media/pictures/1836100a-4983-47dc-8c01-361ae8d53526/1120x700?op=fit"
         ],
         "services": [
-            "Wi-Fi",
+            "WiFi gratis",
             "Breakfast included",
             "Pool",
             "Gym"
@@ -21,21 +21,22 @@
     },
     {
         "id": 2,
-        "name": "Another Hotel",
+        "name": "Edificio Helena",
         "photos": [
-            "https://example.com/photo4.jpg",
-            "https://example.com/photo5.jpg",
-            "https://example.com/photo6.jpg"
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/460683204.jpg?k=a237a34a12fcbadd375ee48f850ef480ddceeb431fbaff531481ee98ad90adb2&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/460683440.jpg?k=19a6fc16f1f62e1454c309ad33bcacc82aae2e6a4fe33fc5c3ccbe314afc7182&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/460683433.jpg?k=2473152b62139ba046d5babd34c19b6cffc6b80ae44dfd70d9f60b398d1be200&o=&hp=1"
         ],
         "services": [
-            "Wi-Fi",
-            "Free parking",
-            "Restaurant"
+            "Wi-Fi gratis",
+            "Traslado aeropuerto",
+            "Ducha",
+            "Desayuno fantástico"
         ],
-        "description": "A charming hotel with spectacular views of the Mediterranean Sea. Perfect for romantic getaways.",
-        "location": "Another City",
-        "reviews": 30,
+        "description": "Edificio Helena está a 6,1 km de Parque El Poblado y ofrece alojamiento con restaurante, salón de uso común, terraza y bar. El apartamento ofrece wifi y parking privado, ambos gratis.        El alojamiento está equipado con TV de pantalla plana y baño privado con ducha y artículos de aseo gratuitos. La cocina tiene nevera, horno y fogones. Para mayor comodidad, el alojamiento puede ofrecer toallas y ropa de cama por un suplemento.                El desayuno diario ofrece opciones buffet, continentales o americanas.                Parque Lleras está a 7 km del alojamiento, y Parque Explora está a 3,9 km. El aeropuerto más cercano (Aeropuerto Olaya Herrera) está a 6 km del alojamiento, que ofrece servicio de traslado de pago para ir o volver del aeropuerto. A las parejas les encanta la ubicación — Le han puesto un 8,2 para viajes de dos personas.",
+        "location": "Medellin",
+        "reviews": 110,
         "price": 150,
-        "stars": "3.2"
+        "stars": "4.1"
     }
 ]
