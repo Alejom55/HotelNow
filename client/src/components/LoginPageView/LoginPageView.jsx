@@ -5,6 +5,15 @@ import { Link } from "react-router-dom"
 import React from 'react'
 import { HotelIcon } from "@/assets/icons"
 
+import {
+    Form,
+    FormControl,
+    FormDescription,
+    FormField,
+    FormItem,
+    FormLabel,
+    FormMessage,
+} from "@/components/ui/form"
 
 const LoginPageView = () => {
     return (

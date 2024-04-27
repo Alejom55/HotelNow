@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "Blues Suites Medellín",
+        "photos": [
+            "https://media.staticontent.com/media/pictures/fd141e7d-56fb-424c-869c-0ae7ee24020f/853x380?op=TRUNCATE&enlarge=false&gravity=ce_0_0&quality=80&dpr=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/453984560.jpg?k=82f9e55fdfbcc2a133a93c6e3c516f5d178d1ad566845117b44647ed57a00fe2&o=&hp=1",
+            "https://media.staticontent.com/media/pictures/1836100a-4983-47dc-8c01-361ae8d53526/1120x700?op=fit"
+        ],
+        "services": [
+            "Wi-Fi",
+            "Breakfast included",
+            "Pool",
+            "Gym"
+        ],
+        "description": "Blues Suites Medellín se encuentra en Medellín. Cuenta con wi-fi gratis en zonas comunes, servicio de spa y servicio de masajes, además de valet parking. Necesitas saber:libre de humo El alojamiento sirve diariamente el desayuno, el cual se ofrece en el bar.Entre las comodidades se destacan estacionamiento limitado gratis, recepción 24 hrs, recepción de paquetes gratis y venta de entradas. Los huéspedes también podrán disfrutar de terraza y jardín. Por un costo adicional, la propiedad cuenta con servicio de traslado al aeropuerto y servicio de guarda-equipaje.",
+        "location": "Medellin",
+        "reviews": 50,
+        "price": 11525390,
+        "stars": "4.5"
+    },
+    {
+        "id": 2,
+        "name": "Another Hotel",
+        "photos": [
+            "https://example.com/photo4.jpg",
+            "https://example.com/photo5.jpg",
+            "https://example.com/photo6.jpg"
+        ],
+        "services": [
+            "Wi-Fi",
+            "Free parking",
+            "Restaurant"
+        ],
+        "description": "A charming hotel with spectacular views of the Mediterranean Sea. Perfect for romantic getaways.",
+        "location": "Another City",
+        "reviews": 30,
+        "price": 150,
+        "stars": "3.2"
+    }
+]

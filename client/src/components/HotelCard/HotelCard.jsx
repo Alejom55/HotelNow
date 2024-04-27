@@ -11,7 +11,7 @@ const HotelCard = ({ id, imgURL, hotelName, stars, description, price }) => {
     const truncateDescriptionResult = truncateDescription(description);
 
     return (
-        <Link to={`/hotel/${id}`}>
+        <>
             <Card>
                 <img
                     alt="Hotel Image"
@@ -41,7 +41,7 @@ const HotelCard = ({ id, imgURL, hotelName, stars, description, price }) => {
                     </div>
                 </CardContent>
             </Card>
-        </Link>
+        </>
     )
 }
 

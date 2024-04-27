@@ -1,20 +1,46 @@
-import React from 'react'
-import { HotelPageView } from '@/components/HomePageView/HotelPageView'
+import React, { useState, useEffect } from 'react'
+import { HotelPageView } from '@/components/HotelPageView/HotelPageView'
 import HotelCard from '@/components/HotelCard/HotelCard'
-const HotelPage = () => {
+import { Link, useParams } from 'react-router-dom'
+import axios from 'axios'
+const HotelPage = ({ data, endpoint }) => {
+    let { id } = useParams();
+    const [hotelsData, setHotelsData] = useState([])
+
+    useEffect(() => {
+        getAllHotels()
+    }, [])
+    const getAllHotels = async () => {
+        try {
+            const res = await axios.get(`${endpoint}/hotel/${id}`)
+            setHotelsData(res.data)
+            console.log(res.data)
+
+        } catch (error) {
+            console.log(error)
+        }
+
+
+    }
+    const filteredData = data.filter(hotel => hotel.id !== id);
     return (
         <>
-            <HotelPageView />
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
+            <HotelPageView imgURLS={hotelsData.photos} hotelName={hotelsData.name} stars={hotelsData.stars} reviews={hotelsData.reviews} services={hotelsData.services} location={hotelsData.location} price={hotelsData.price} description={hotelsData.description} />
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-600">
                 <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <HotelCard
-                        id={1}
-                        imgURL={'https://media.staticontent.com/media/pictures/fd141e7d-56fb-424c-869c-0ae7ee24020f/853x380?op=TRUNCATE&enlarge=false&gravity=ce_0_0&quality=80&dpr=1'}
-                        hotelName={'Blues Suites Medellín'}
-                        stars={5}
-                        description={'Blues Suites Medellín se encuentra en Medellín. Cuenta con wi-fi gratis en zonas comunes, servicio de spa y servicio de masajes, además de valet parking.'}
-                        price={11525390} />
+                    {data.map((hotel) => (
+                        <Link to={`/hotel/${hotel.id}`} key={hotel.id}>
+                            <HotelCard
+                                id={hotel.id}
+                                imgURL={hotel.photos[0]}
+                                hotelName={hotel.name}
+                                stars={hotel.stars}
+                                description={hotel.description}
+                                price={hotel.price}
+                            />
+                        </Link>
+
+                    ))}
                 </div>
             </div>
         </>

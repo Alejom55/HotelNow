@@ -1,6 +1,4 @@
-import { useState } from 'react'
-import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// Routes
 import NavBar from './components/NavBar/NavBar'
 import HomePage from './pages/HomePage'
 import HotelPage from './pages/HotelPage'
@@ -9,23 +7,38 @@ import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 
 
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+
+
+const endpoint = 'http://localhost:8000/api'
 function App() {
-  const [count, setCount] = useState(0)
-  const [hide, setHide] = useState(false)
-  const hideNavBarRoutes = ['/login', '/register'];
-  // const shouldHideNavBar = hideNavBarRoutes.includes(location.pathname)? setHide(true) : setHide(false);
+  const [hotelsData, setHotelsData] = useState([])
+
+  useEffect(() => {
+    getAllHotels()
+  }, [])
+  const getAllHotels = async () => {
+    try {
+      const res = await axios.get(`${endpoint}/hotels`)
+      setHotelsData(res.data)
+
+    } catch (error) {
+      console.log(error)
+    }
+
+  }
   return (
     <>
       <div className="font-haken">
         <BrowserRouter>
           <NavBar />
           <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/hotel/:id' element={<HotelPage />} />
+            <Route path='/' element={<HomePage data={hotelsData} />} />
+            <Route path='/hotel/:id' element={<HotelPage data={hotelsData} endpoint={endpoint} />} />
             <Route path='/login' element={<LoginPage />} />
             <Route path='/register' element={<RegisterPage />} />
-            {/* <Route path='/create' element={<CreateProduct />} /> */}
-            {/* <Route path='/edit/:id' element={<EditProduct />} /> */}
 
           </Routes>
           <Footer />
@@ -35,5 +48,7 @@ function App() {
     </>
   )
 }
+
+
 
 export default App;
