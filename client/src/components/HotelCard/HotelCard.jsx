@@ -5,13 +5,13 @@ import { StarIcon } from '@/assets/icons'
 import { Button } from '@/components/ui/button'
 import { formattedPrice, truncateDescription } from '@/lib/utils'
 
-const HotelCard = ({ imgURL, hotelName, stars, description, price }) => {
+const HotelCard = ({ id, imgURL, hotelName, stars, description, price }) => {
     const imageURL = imgURL || "https://via.placeholder.com/400x250";
     const formattedPriceResult = formattedPrice(price);
     const truncateDescriptionResult = truncateDescription(description);
 
     return (
-        <Link to={'#'}>
+        <Link to={`/hotel/${id}`}>
             <Card>
                 <img
                     alt="Hotel Image"

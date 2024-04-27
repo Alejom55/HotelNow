@@ -7,13 +7,13 @@ const NavBar = () => {
     return (
         <header className="flex items-center justify-between bg-gray-900 px-4 py-3 text-white sm:px-6 lg:px-8">
             <div className="flex items-center">
-                <Link className="flex items-center" to="#">
+                <Link className="flex items-center" to="/">
                     <HotelIcon className="h-8 w-8 mr-2" />
                     <span className="text-lg font-bold">HotelNow</span>
                 </Link>
             </div>
             <nav className="flex space-x-4 ">
-                <Link className="hidden sm:block self-center text-gray-400 transition-colors duration-300 hover:text-white" to="#">
+                <Link className="hidden sm:block self-center text-gray-400 transition-colors duration-300 hover:text-white" to="/">
                     Hoteles
                 </Link>
                 <Link className="hidden sm:block self-center text-gray-400 transition-colors duration-300 hover:text-white" to="#">
