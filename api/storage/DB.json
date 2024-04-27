@@ -38,5 +38,87 @@
         "reviews": 110,
         "price": 150,
         "stars": "4.1"
+    },
+    {
+        "id": 3,
+        "name": "Hotel Lares 70 Laureles",
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/542889936.jpg?k=ace33cb37a78ecd3433ea682e75e610d1a485fda555926f9c30c4eedb986bc09&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/542896210.jpg?k=9de6b17b80d438e442fe224ad2af3b715faa7c835baa982b216272280b946e62&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/542891818.jpg?k=99335f999a05014a6667f98ce26786c4098db976c8ea2769aefe3713eaf84453&o=&hp=1"
+        ],
+        "services": [
+            "Wi-Fi gratis",
+            "Recepción 24 horas",
+            "Desayuno",
+            "Habitaciones familiares"
+        ],
+        "description": "Hotel Lares 70 Laureles está muy bien situado en el barrio de Laureles - Estadio, Medellín, a 7,4 km de Parque Lleras, a 13 min a pie de Plaza de Toros La Macarena y a 1,7 km de Segundo Parque Laureles. Este hotel de 3 estrellas ofrece salón de uso común y tiene habitaciones con aire acondicionado, wifi gratis y baño privado. Este alojamiento libre de humo está a 6,7 km de Parque El Poblado.        En el hotel, cada habitación está equipada con armario. En Hotel Lares 70 Laureles, todas las habitaciones disponen de escritorio y TV de pantalla plana, y algunas también ofrecen balcón. En el alojamiento, las habitaciones están equipadas con ropa de cama y toallas.                En Hotel Lares 70 Laureles se sirve todas las mañanas un desayuno continental.                El personal de la recepción 24 horas puede ofrecer consejos sobre cómo y por dónde moverse en la zona.                Parque Explora está a 5,1 km del alojamiento, y Parque de las Aguas está a 30 km. El aeropuerto más cercano (Aeropuerto Olaya Herrera) está a 4 km.",
+        "location": "Medellin",
+        "reviews": 90,
+        "price": 1226120,
+        "stars": "3.9"
+    },
+    {
+        "id": 4,
+        "name": "80Cooliving Medellín",
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/332531123.jpg?k=3c3b65b3d60175bf9b3affe55e41a80df84d984839ad501979b21303c2bed800&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344586159.jpg?k=79ea2416353ef240386a1eed64907c40e76fbbba6d8eaf9fdc5c0a6fe976a358&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/332527904.jpg?k=b9580f3eb6bf94bb145f48603532af36622a636b52b88b746ba080630815573b&o=&hp=1"
+        ],
+        "services": [
+            "wifi gratis",
+            "aire acondicionado",
+            "jardín con terraza"
+        ],
+        "description": "80Cooliving Medellín se encuentra en Medellín, a 6,2 km de Parque El Poblado y a 7 km de Parque Lleras. Ofrece alojamiento con acceso gratuito a WiFi, aire acondicionado y un jardín con terraza. Todas las unidades disponen de TV de pantalla plana, baño privado y una cocina totalmente equipada con nevera. Cerca del alojamiento hay puntos de interés como Segundo Parque Laureles, Parque de Belén y Plaza San Antonio. El aeropuerto más cercano, el Aeropuerto Olaya Herrera, está a 2 km de distancia.",
+        "location": "Medellin",
+        "reviews": 120,
+        "price": 150,
+        "stars": "4.1"
+    },
+    {
+        "id": 5,
+        "name": "Hotel Bolivariana Plaza Medellin",
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/549581736.jpg?k=bf8b04cdcbd9a40fa7f2ce095edd352d1e6a050e96db24f74b6923851feda555&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/549567757.jpg?k=4179c16e8ec87736be70e3d316c9271f478fb802793f2631b4acda0731574a85&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/549568079.jpg?k=5d948dfd0f246015caeb0ceaf96a90be892e81ca1b797aa6389c12c88e555790&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/542912712.jpg?k=7ac81edd5f9841254fabcee4aa68d64d54333a8b0d4883a54deb327c549bd469&o=&hp=1"
+        ],
+        "services": [
+            "Wi-Fi gratis",
+            "Spa y centro de bienestar",
+            "Gimnasio",
+            "Servicio de habitaciones"
+        ],
+        "description": "El Hotel Bolivariana Plaza Medellin se encuentra en Medellín, a 10 minutos en coche del centro de convenciones Plaza Mayor, y ofrece spa, bañera de hidromasaje, restaurante, jardín, centro de fitness y habitaciones con WiFi gratuita y aire acondicionado. Las habitaciones del Hotel Bolivariana Plaza Medellin son luminosas y amplias. Cuentan con muebles modernos, TV de plasma, minibar y baño privado. Se sirve un desayuno americano a diario. El restaurante Yo Me Cultivo elabora platos saludables. Los huéspedes podrán relajarse en la terraza, que incluye sauna, bañera de hidromasaje, baño turco y centro de fitness. También podrán descansar en el jardín o ir de compras en el centro comercial Unicentro, situado a 10 minutos en coche. El Hotel Bolivariana Plaza Medellin se halla a 15 minutos en coche del aeropuerto Olaya Herrera.",
+        "location": "Medellin",
+        "reviews": 72,
+        "price": 1282060,
+        "stars": "3.4"
+    },
+    {
+        "id": 6,
+        "name": "Barcelo Coliving",
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/474812393.jpg?k=63a98e80febc621b2915183cce2c63a4d06f88f09febfd802ed319ea1db0f61c&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/474817290.jpg?k=0729cdba81bd9f1dd6149a446e9e89e2ee195a436f79e4ad01e117db7f0ab1ce&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/474817287.jpg?k=d10cb8c9dfa0d82ddd2737380f0a46824ce5a67d4bdb09fe5239a2ad185eb631&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/450066005.jpg?k=6dda1c3f48a9ef62b5670cd867a666e37a00ef8234d34f5a580d8dd06c3b188f&o=&hp=1"
+        ],
+        "services": [
+            "Wi-Fi gratis",
+            "Balcón",
+            "Baño privado",
+            "Bañera de hidromasaje",
+            "Cocina"
+        ],
+        "description": "Barcelo Coliving está en Medellín y ofrece alojamiento con balcón o patio, wifi gratis y TV, además de terraza. Las unidades tienen cocina totalmente equipada con nevera, cafetera y microondas. Para mayor comodidad, el alojamiento puede ofrecer toallas y ropa de cama por un suplemento. Cerca del alojamiento hay puntos de interés como Segundo Parque Laureles, Estadio Atanasio Girardot y Plaza San Antonio. El aeropuerto (Aeropuerto Olaya Herrera) está a 4 km.",
+        "location": "Medellin",
+        "reviews": 100,
+        "price": 1047860,
+        "stars": "4.0"
     }
 ]

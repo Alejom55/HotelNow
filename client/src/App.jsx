@@ -6,9 +6,6 @@ import Footer from './components/Footer/Footer'
 import LoginPage from './pages/LoginPage'
 import RegisterPage from './pages/RegisterPage'
 
-
-import axios from 'axios'
-import { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const endpoint = 'http://localhost:8000/api'
