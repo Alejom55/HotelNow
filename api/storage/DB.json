@@ -120,5 +120,48 @@
         "reviews": 100,
         "price": 1047860,
         "stars": "4.0"
+    },
+    {
+        "id": 7,
+        "name": "EcoHub Hotel Medellin",
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/484840582.jpg?k=43e93fcd00d396b62e2d5b4e5d2f17ad2af7e83252fb77944a8d03dfa7926ae1&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285924261.jpg?k=9c789b8805644fa3faf18249bcbe53a3e63082f9028aa8605d8278d7d991df6c&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/517244227.jpg?k=43b65f940ccef726f5d2f7b3cdd8cb2763304f74142322a082776f9fe08afe5b&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/484840593.jpg?k=b84d465530cd64886f9eeb857810925d2735a1ca13bedafb9aea5761047a70d0&o=&hp=1"
+        ],
+        "services": [
+            "Bar",
+            "Gimnasio",
+            "Restaurante",
+            "WiFi gratis",
+            "Parking gratis"
+        ],
+        "description": "",
+        "location": "Medellin",
+        "reviews": 70,
+        "price": 269280,
+        "stars": "3.4"
+    },
+    {
+        "id:": 8,
+        "name": "Hotel Suite Comfort",
+        "photos": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/182227894.jpg?k=3dbc0268ded8abc06c9d12a3fdbae23cdd400d09c8a92300c3c56a6ec78f381f&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/284654753.jpg?k=666d014793ef099f2eaa60c3322574349ce95217cb696f30ff62cd1e7f6cf1e8&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/284654295.jpg?k=032a2071dadda91c3ae3961631445079a328f11619a7b50481fb7fcf513e9321&o=&hp=1",
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/284657025.jpg?k=c1aa1c0ec6bc3150252fa30e9284b6c405b7c669041c44410a9d10b4fb1b8d8e&o=&hp=1"
+        ],
+        "services": [
+            "Wi-Fi gratis",
+            "Recepción 24 horas",
+            "Desayuno",
+            "Habitaciones familiares"
+        ],
+        "description": "Este hotel de 4 estrellas se encuentra en Medellín, a 3 minutos en coche del aeropuerto Olaya Herrera. Ofrece masajes relajantes y conexión Wi-Fi gratuita en todas las instalaciones. Las habitaciones del Hotel Suite Comfort tienen aire acondicionado. Algunas también tienen zona de estar. El restaurante del Hotel Suite Comfort sirve una amplia variedad de platos regionales. El Suite Comfort Hotel ofrece recepción 24 horas y servicio de lavandería. Hay aparcamiento privado gratuito.",
+        "location": "Medellin",
+        "reviews": 90,
+        "price": 240000,
+        "stars": "3.9"
     }
 ]

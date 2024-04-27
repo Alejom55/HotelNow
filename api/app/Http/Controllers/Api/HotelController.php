@@ -22,7 +22,7 @@ class HotelController extends Controller
 
             return response()->json($hotels);
         } else {
-            return response()->json(['error' => 'El archivo JSON no se encontró'], 404);
+            return response()->json(['error' => 'JSON file not found'], 404);
         }
     }
 
